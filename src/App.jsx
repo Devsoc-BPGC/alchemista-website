@@ -46,12 +46,9 @@ function App() {
   return (
     <>
       <div className="bg-[#3B1A55] z-10 min-h-[100vh] h-full text-white justify-center ">
-        {/* <div className="text-6xl pt-2 border-b-[1px] font-serif flex self-center justify-center">
-          Alchemista
-        </div> */}
         <img src={alc} className="flex justify-center mx-auto"></img>
         <a
-          href="https://www.google.com/"
+          href="https://unstop.com/o/MiOIHyZ?lb=HsMnNZCi/"
           target="_blank"
           rel="noopener noreferrer"
         >
