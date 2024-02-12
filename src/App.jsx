@@ -2,40 +2,54 @@ import { useState } from "react";
 
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import alc from "./alc.jpeg";
+import kavya from "./assets/kavya.jpg";
+import deep from "./assets/deep.jpg";
+import advik from "./assets/advik.jpg";
+import ak from "./assets/ak.jpg";
+import drona from "./assets/drona.jpg";
+import parth from "./assets/parth.jpg";
 
 function App() {
   const arr = [
     {
-      img: "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg",
-      name: "one",
-      linkedin: "https://www.google.com/",
+      img: kavya,
+      name: "Kavya MD",
+      linkedin: "https://in.linkedin.com/in/kavya-md-b46732267",
     },
     {
-      img: "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg",
-      name: "two",
-      linkedin: "https://www.google.com/",
+      img: deep,
+      name: "Deepanshi Srivastava",
+      linkedin: "https://in.linkedin.com/in/deepanshi-srivastava-795597275",
     },
     {
-      img: "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg",
-      name: "three",
-      linkedin: "https://www.google.com/",
+      img: parth,
+      name: "Parth Nair",
+      linkedin: "https://in.linkedin.com/in/parthmnair",
     },
     {
-      img: "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg",
-      name: "four",
-      linkedin: "https://www.google.com/",
+      img: advik,
+      name: "Advik Deshpande",
+      linkedin: "https://in.linkedin.com/in/advik-deshpande-9b7b5b245",
     },
     {
-      img: "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg",
-      name: "five",
+      img: ak,
+      name: "AK Chhatrapati",
+      linkedin: "https://in.linkedin.com/in/chhatrapati-a-k-b39876258",
+    },
+    {
+      img: drona,
+      name: "Drona Agarwal",
+      linkedin: "https://in.linkedin.com/in/drona-agrawal-b92178260",
     },
   ];
   return (
     <>
-      <div className="bg-[#3c096c] z-10 min-h-[100vh] h-full text-white justify-center ">
-        <div className="text-6xl pt-2 border-b-[1px] font-serif flex self-center justify-center">
+      <div className="bg-[#3B1A55] z-10 min-h-[100vh] h-full text-white justify-center ">
+        {/* <div className="text-6xl pt-2 border-b-[1px] font-serif flex self-center justify-center">
           Alchemista
-        </div>
+        </div> */}
+        <img src={alc} className="flex justify-center mx-auto"></img>
         <a
           href="https://www.google.com/"
           target="_blank"
@@ -43,7 +57,7 @@ function App() {
         >
           <Button
             variant="link"
-            className="bg-white text-lg flex justify-center self-center mx-auto my-auto mt-8 mb-8"
+            className="bg-white text-lg flex justify-center self-center mx-auto my-auto  mb-8"
           >
             Register
           </Button>
@@ -51,7 +65,7 @@ function App() {
         <div className="font-mono text-4xl flex mb-[-24px]  justify-center">
           COORDINATING TEAM
         </div>
-        <div className="flex flex-row flex-wrap justify-evenly">
+        <div className="flex flex-row flex-wrap pb-12 justify-evenly">
           {arr.map((arr, index) => (
             <>
               <div key={index}>
@@ -68,7 +82,7 @@ function App() {
                       <img
                         src={arr.img}
                         alt={`Image ${index}`}
-                        className="aspect-square border border-slate-300 p-2 rounded-lg object-cover"
+                        className="aspect-square border border-slate-300 p-2 rounded-lg object-contain"
                       />
                     </CardContent>
                   </Card>
